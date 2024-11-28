@@ -44,3 +44,9 @@ At this point, we’ve solved most of the problems required to send data across 
 While it might seem logical to package this concern entirely into the **physical layer**, it turns out the reality is much more complex. Not every hop in the network relies on the same physical medium. Some hops use optical fiber, others rely on electrical cables, and some even transmit data wirelessly. Because of this lack of uniformity, the way bits are translated into physical signals—and then back into bits—varies depending on the medium.
 
 This is where the **data link layer** comes into play. The data link layer handles the unique adaptations required for each type of physical medium. It ensures that bits are translated to and from the physical signals correctly, depending on the technology being used. Meanwhile, the actual signals traveling through physical devices—whether they’re light pulses, electrical currents, or radio waves—are the responsibility of the **physical layer**.
+
+## The Missing Layers
+
+If you’re already familiar with the OSI model, you’ve probably noticed that I skipped two layers that live between the application layer and the transport layer: the **session layer** and the **presentation layer**. While these layers are important, I don’t think they’re mandatory for understanding how to break down the OSI model into its basic concerns.
+
+I’ll probably dedicate an article to these two layers later, as they play a more abstract but still significant role in network communication. For now, we can move forward without them.
